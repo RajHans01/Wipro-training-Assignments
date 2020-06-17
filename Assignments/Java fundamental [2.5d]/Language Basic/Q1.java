@@ -12,7 +12,7 @@ If the command line arguments are ABC and Mumbai then the output generated shoul
 import java.io.*;
 import java.util.*;
 
-public class Twostring {
+public class Q1 {
 	public static void main(String args[]) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter String: ");
