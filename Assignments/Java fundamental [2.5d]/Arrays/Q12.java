@@ -1,28 +1,31 @@
-Given an array of type int, print true if every element is 1 or 4. 
+ Given 2 int arrays, a and b, each length 3, form a new array of length 2, containing their middle elements.
 
-only14([1, 4, 1, 4]) → true
-only14([1, 4, 2, 4]) → false
-only14([1, 1]) → true
-======================================================================================
-:        import java.util.Scanner;
-                    public class Q11 {
-                 public static void main(String[] args) {
+middleWay([1, 2, 3], [4, 5, 6]) → [2, 5]
+middleWay([7, 7, 7], [3, 8, 0]) → [7, 8]
+middleWay([5, 2, 9], [1, 4, 5]) → [2, 4]
+===================================================================================
+
+import java.util.Scanner;
+
+public class Q12 {
+
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int a[] = new int[n];
-		boolean flag = true;
-		for (int i = 0; i < n; i++) {
+		int a[] = new int[3];
+		int b[] = new int[3];
+		for (int i = 0; i < 3; i++) {
 			a[i] = sc.nextInt();
 		}
-		for (int i : a) {
-			if (i != 1 && i != 4) {
-				flag = false;
-				break;
-			}
+		for (int i = 0; i < 3; i++) {
+			b[i] = sc.nextInt();
 		}
-		System.out.println(flag);
-
+		int c[] = new int[2];
+		c[0] = a[1];
+		c[1] = b[1];
+		for (int i : c) {
+			System.out.print(i + " ");
+		}
 	}
 
 }
