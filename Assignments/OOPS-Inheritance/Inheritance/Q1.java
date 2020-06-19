@@ -6,40 +6,42 @@ Create an instance of Animal class and invoke the eat and sleep methods using th
 
 Create an instance of Bird class and invoke the eat, sleep and fly methods using this object.
 ================================================================================================================
-class Animal {
-public Animal() {
-    System.out.println("A new animal has been created!");
-}   
-public void sleep() {
-    System.out.println("An animal sleeps...");
-}
-public void eats() {
-    System.out.println("An animal eats...");
-}
-}
-
-class Bird  extends Animal {
-
-public Bird() {
-    System.out.println("A new bird has been created!");
-}
-public void sleep() {
-    System.out.println("A bird sleeps...");
-}
-public void eats() {
-    System.out.println("A bird eats...");
+:                    class Animal {
+	
+	public void eat () {
+		System.out.println("Animal eat");
+	}
+	
+	public void sleep () {
+		System.out.println("Animal sleep");
+	}
 }
 
+class Bird extends Animal {
+	public void eat () {
+		System.out.println("Bird eat");
+	}
+	
+	public void sleep () {
+		System.out.println("Bird sleep");
+	}
+	
+	public void fly () {
+		System.out.println("Bird fly");
+	}
 }
 
-public class E1 {
+public class Q1 {
 
-public static void main(String[] args) {
-    Animal animal = new Animal();
-    Bird bird = new Bird();
-    bird.sleep();
-    bird.eats();
-    animal.sleep();
-    animal.eats();
-}
+	public static void main(String[] args) {
+		Animal animal = new Animal();
+		animal.eat();
+		animal.sleep();
+
+		Bird bird = new Bird();
+		bird.eat();
+		bird.sleep();
+		bird.fly();
+	}
+
 }
