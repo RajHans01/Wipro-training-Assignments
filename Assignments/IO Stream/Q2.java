@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class JavaIO2 {
+public class Q2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
